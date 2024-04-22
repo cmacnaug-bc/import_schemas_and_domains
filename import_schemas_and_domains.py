@@ -1,3 +1,16 @@
+# Name: import_schemas_and_domains.py
+# Author: Conor MacNaughton - conor.macnaughton@gov.bc.ca
+# Created: 2021-06-15
+# Last Updated: 2024-04-22
+# Purpose: This tool takes input schema and domain Excel files, producing a point feature class or 
+#          domain table for each sheet within them. The domains are then assigned to the appropriate 
+#          fields within the feature classes.
+# Inputs: 1) path to existing or new file geodatabase
+#         2) path to Excel holding feature class schemas
+#         3) path to Excel holding domains
+# Outputs: feature classes and domains in geodatabase, with domains assigned to appropriate fields
+
+
 import os
 from openpyxl import load_workbook
 import arcpy as ap
