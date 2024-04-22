@@ -3,11 +3,12 @@ from openpyxl import load_workbook
 import arcpy as ap
 
 # Paths
-out_gdb = r'\\spatialfiles.bcgov\work\env\esd\eis\tei\TEI_Working\cmacnaug\TEI_InfoRequests\Amy_Waterhouse_2024_04_19\test5.gdb'
+out_gdb = r''
+schema_excel = r''
+domains_excel = r''
+
 out_folder_path = os.path.dirname(out_gdb)
 out_gdb_name = os.path.basename(out_gdb)
-schema_excel = r"\\spatialfiles.bcgov\work\env\esd\eis\tei\TEI_Working\cmacnaug\TEI_InfoRequests\Amy_Waterhouse_2024_04_19\schemas.xlsx"
-domains_excel = r"\\spatialfiles.bcgov\work\env\esd\eis\tei\TEI_Working\cmacnaug\TEI_InfoRequests\Amy_Waterhouse_2024_04_19\domains.xlsx"
 
 try:
     # Create geodatabase if it doesn't exist
